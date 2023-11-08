@@ -1,0 +1,162 @@
+/* обнуление */
+/** 
+Очищаем отступы и границы
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/**
+Подсчет ширины блока
+*/
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/**
+Убираем линии обводки во всех браузерах
+*/
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+/**
+Добавляем значение "display: block"
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/**
+Уравнивают поведения шрифтов и элементов для разных браузерах
+*/
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/**
+Добавляем наследование для шрифтов
+*/
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/**
+Убираем особенности в разных браузерах
+* 1. Чистим стили для списков
+*/
+
+input::-ms-clear {
+	display: none;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none; /* 1 */
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, 
+
+/**
+* header
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500&display=swap&subset=cyrillic-ext");
+
+.header {
+}
+.header-container {
+}
+.header-logo {
+}
+.logo-img {
+}
+.nav-menu {
+}
+.nav-list {
+}
+.nav-item {
+}
+.nav-link {
+}
+.phone {
+}
+.header-main {
+		// .header-main__promo
+		&__promo {}
+		// .header-main__container
+		&__container {}
+		// .header-main__promo-text
+		&__promo-text {}
+		// .header-main__main-heading
+		&__main-heading {}
+		// .header-main__promo-description
+		&__promo-description {}
+		// .header-main__button
+		&__button {}
+}
